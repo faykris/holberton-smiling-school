@@ -1,0 +1,130 @@
+
+*:root {
+    --color-primary: #C271FF;
+    --color-shadow: #343434;
+}
+body {
+    background-image: url(images/pic_1.jpg);
+    background-position: center;
+    background-size: inherit;
+    background-repeat: no-repeat;
+}
+
+.hero-piece {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-piece h1 {
+    font-size: 4rem;
+    margin-top: 10rem;
+}
+.pro-title {
+    margin-top: 8rem;
+}
+
+.btn {
+    border-radius: 500px !important;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 18px var(--color-shadow) !important;
+}
+
+.text-primary {
+    color: var(--color-primary) !important;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    opacity: 0.9 !important;
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+}
+
+.nav-link:hover {
+    color: var(--color-primary) !important;
+}
+
+.pro {
+    padding: 1.5rem .5rem;
+}
+
+.pro-img {
+    width: 50% !important;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .nabvar {
+        flex-wrap: nowrap;
+    }
+
+    .logo {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+
+    .brand {
+        padding-left: 13%;
+        width: 80%;
+        
+    }
+    .logo .logo-img img {
+        padding-top: .75rem;
+        width: 2rem;
+    }
+    .logo .logo-text img {
+        padding-top: .75rem;
+        width: 8rem;
+    }
+
+    .pro-img {
+        width: 2.5rem !important;
+    }
+
+    .pro {
+        font-size: 90% !important;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h16M4 23h22'/%3e%3c/svg%3e") !important;
+}
+    }
+
+}
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .pro-img {
+        width: 75% !important;
+    }
+
+    .pro {
+        font-size: 90% !important
+    }
+}
+
+@media (max-width: 1200px) {
+    .pro-img {
+        width: 75% !important;
+    }
+
+    .pro {
+        font-size: 90% !important
+    }
+}
+
+@media (min-width: 1201px) {
+    body {
+        background-position: center;
+        background-size: cover;
+    }
+}
