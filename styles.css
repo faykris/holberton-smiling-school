@@ -123,6 +123,21 @@ header {
   color: var(--color-white);
 }
 
+.holberton_school-icon-ic_facebook, .holberton_school-icon-ic_twitter, .holberton_school-icon-ic_instagram {
+  font-size: 200%;
+}
+
+.copyright {
+  opacity: 0.5;
+}
+
+.footer {
+  background-color: var(--color-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     html {
@@ -190,8 +205,21 @@ header {
     margin-top: 3.75rem !important;
   }
 
+  .footer {
+    justify-content: center;
+  }
 
+  .footer .row .footer-logo, .footer .row .footer-s-m{
+    display: flex;
+    justify-content: center !important;
+  }
+
+  .holberton_school-icon-ic_facebook, .holberton_school-icon-ic_twitter, .holberton_school-icon-ic_instagram {
+    font-size: 300%;
+  }
 }
+
+
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
