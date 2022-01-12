@@ -3,6 +3,7 @@
     --color-primary: #C271FF;
     --color-secondary: #071629;
     --color-shadow: #343434;
+    --color-white: #FFFFFF;
 }
 body {
     background-image: url(images/pic_1.jpg);
@@ -67,6 +68,7 @@ header {
 
 .pro-img {
     width: 50% !important;
+    
 }
 
 /* carousel of quotes - section */
@@ -79,6 +81,10 @@ header {
     font-size: 600%;
 }
 
+.holberton_school-icon-star {
+  font-size: 120%;
+}
+
 .car-img {
   padding: 1rem 0 !important;
 }
@@ -87,8 +93,36 @@ header {
   margin: 0 !important;
 }
 
+.card {
+  border: 0;
+}
+
+.row-cards {
+  width: 80%;
+}
+
+.star-non-r {
+  opacity: .4;
+}
+
+.car-play {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 92%;
+}
+
+.card-logo {
+  width: 30%;
+  top: 5rem;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+    html {
+      font-size: 90%;
+    }
 
     body {
         background-position: top;
@@ -146,10 +180,18 @@ header {
     margin: 0 !important;
   }
 
+  .car-play {
+    width: 91%;
+    margin-top: 3.75rem !important;
+  }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
+  html {
+    font-size: 92% !important;
+  }
     .pro-img {
         width: 75% !important;
     }
@@ -163,6 +205,13 @@ header {
   }
 }
 
+@media (max-width: 991px) {
+  .car-play {
+    width: 89% !important;
+    margin-top: 3.1rem !important;
+  }
+}
+
 @media (max-width: 1200px) {
     .pro-img {
         width: 75% !important;
@@ -171,12 +220,21 @@ header {
     .pro {
         font-size: 90% !important
     }
+    .car-play {
+      width: 90%;
+      margin-top: 2.1rem;
+    }
 }
 
 @media (min-width: 1201px) {
     body {
-        background-position: center;
-        background-size: cover;
+        background-position: top;
+        background-size: contain;
+    }
+
+    .car-play {
+      width: 90%;
+      margin-top: 2.4rem !important;
     }
 }
 
