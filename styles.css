@@ -11,7 +11,6 @@ body {
 
 /* Variables
   ============================= */
-
 *:root {
     --color-primary: #C271FF;
     --color-secondary: #071629;
@@ -20,6 +19,7 @@ body {
     --color-white: #FFFFFF;
     --color-grey: #797979;
 }
+
 .homepage {
     background-image: url(images/pic_1.jpg);
     background-color: var(--color-secondary);
@@ -33,6 +33,17 @@ body {
 
 .pricing {
   background-image: url(images/pic_2.jpg);
+  background-color: var(--color-secondary);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 100% !important;
+}
+
+.courses {
+  background-image: url(images/pic_3.jpg);
   background-color: var(--color-secondary);
   background-position: top;
   background-size: contain;
@@ -205,11 +216,34 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 5rem;
   margin: 0;
 }
+
+/***************************
+         courses page
+ ***************************/
+
+ .courses-title {
+   font-family: Coiny;
+   font-size: 2rem;
+ }
+
+ [class*='d-nav']::before {
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  background-color: var(--color-white);
+  width: 4rem;
+  height: 0.1rem;
+ }
+
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     html {
       font-size: 90%;
     }
+
+    .d-nav-1::before {
+      bottom: 6rem;
+     }
 
     .homepage {
         background-position: top;
@@ -284,6 +318,7 @@ h1, h2, h3, h4, h5, h6 {
   .holberton_school-icon-ic_facebook, .holberton_school-icon-ic_twitter, .holberton_school-icon-ic_instagram {
     font-size: 300%;
   }
+
 }
 
 /* Medium devices (tablets, 768px and up) */
