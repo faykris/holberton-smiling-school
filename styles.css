@@ -200,6 +200,11 @@ h1, h2, h3, h4, h5, h6 {
 .premium-list .premium-ele {
   border-color: var(--color-grey) !important;
 }
+
+.faq-title {
+  font-size: 5rem;
+  margin: 0;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     html {
