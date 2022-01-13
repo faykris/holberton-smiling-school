@@ -24,7 +24,7 @@ body {
     background-image: url(images/pic_1.jpg);
     background-color: var(--color-secondary);
     background-position: top;
-    background-size: inherit;
+    background-size: contain;
     background-repeat: no-repeat;
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -35,7 +35,7 @@ body {
   background-image: url(images/pic_2.jpg);
   background-color: var(--color-secondary);
   background-position: top;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   padding-left: 0 !important;
   padding-right: 0 !important;
