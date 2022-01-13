@@ -1,9 +1,24 @@
+/* Reset / Normalize
+  ============================= */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
+
+
+
+body {
+  font-family: Source Sans Pro !important;
+}
+
+/* Variables
+  ============================= */
 
 *:root {
     --color-primary: #C271FF;
     --color-secondary: #071629;
+    --color-check: #82D24F;
     --color-shadow: #343434;
     --color-white: #FFFFFF;
+    --color-grey: #797979;
 }
 .homepage {
     background-image: url(images/pic_1.jpg);
@@ -20,7 +35,7 @@
   background-image: url(images/pic_2.jpg);
   background-color: var(--color-secondary);
   background-position: top;
-  background-size: inherit;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -41,10 +56,15 @@ header {
     align-items: center;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+} 
+
 .hero-piece h1 {
-    font-size: 4rem;
+    font-size: 5rem;
     margin-top: 10rem;
 }
+
 .pro-title {
     margin-top: 8rem;
 }
@@ -149,6 +169,37 @@ header {
   align-items: center;
 }
 
+
+/***************************
+         pricing page
+ ***************************/
+ .what-is {
+  padding-top: 8rem;
+}
+
+.price-big {
+  font-size: 3rem;
+}
+
+.price-small {
+  font-size: 80%;
+  opacity: 0.5;
+}
+
+.success-check {
+  color: var(--color-check);
+  font-size: 130%;
+}
+
+.premium-list {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+}
+
+.premium-list .premium-ele {
+  border-color: var(--color-grey) !important;
+}
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     html {
@@ -229,14 +280,6 @@ header {
     font-size: 300%;
   }
 }
-
-/***************************
-         pricing page
- ***************************/
-.what-is {
-  padding-top: 8rem;
-}
-
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
