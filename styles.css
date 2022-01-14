@@ -369,6 +369,10 @@ h1, h2, h3, h4, h5, h6 {
     .holberton_school-icon-arrow_3, .holberton_school-icon-arrow_4 {
       font-size: 4.5rem;
   }
+
+  .pricing {
+    background-size: inherit;
+  }
 }
 
 @media (max-width: 991px) {
